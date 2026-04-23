@@ -1,0 +1,123 @@
+[2026-04-23T13:03:30Z] === ENRICH ITERATION 1 START | repo=ratatui/ratatui sha=e7831aed ===
+[2026-04-23T13:03:30Z] [iter=1] PHASE START: enrich repo=ratatui/ratatui sha=e7831aed runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/e7831aed-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/e7831aedd40d9ce2fa9f37a6f2b8f00c05f2859e.nq.gz
+[2026-04-23T13:03:30Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-23T13:03:47Z] [iter=1] AST store loaded triples=2188465 load_secs=16 mem_mb=895 MB
+[2026-04-23T13:03:47Z] [iter=1] Step 2: Finding LSP targets mem_mb=895 MB
+[2026-04-23T13:03:51Z] [iter=1] LSP targets found call_sites=17013 imports=248 extends=0 implements=68 secs=4
+[2026-04-23T13:03:54Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=895 MB
+[2026-04-23T13:04:07Z] [iter=1] Position index built positions=143759 nodes_with_types=172381 secs=13 mem_mb=895 MB
+[2026-04-23T13:04:07Z] [iter=1] Step 3: Starting LSP resolution mem_mb=895 MB already_completed_types=[] already_completed_files=0
+[2026-04-23T13:04:07Z] [iter=1] Resolving target type target_type=call_site count=17013
+[2026-04-23T13:04:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.2 files_done=0 resolved=0 errors=0 current=examples/apps/weather/src/main.rs
+[2026-04-23T13:06:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=1 resolved=10 errors=38 current=ratatui-widgets/src/barchart.rs
+[2026-04-23T13:12:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.4 files_done=2 resolved=90 errors=497 current=ratatui/examples/line_gauge.rs
+[2026-04-23T13:14:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.6 files_done=3 resolved=100 errors=574 current=ratatui-widgets/src/paragraph.rs
+[2026-04-23T13:20:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.9 files_done=4 resolved=173 errors=998 current=ratatui-core/src/text/line.rs
+[2026-04-23T13:25:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.9 files_done=5 resolved=330 errors=1337 current=ratatui-widgets/src/barchart/bar.rs
+[2026-04-23T13:25:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.4 files_done=6 resolved=347 errors=1371 current=examples/apps/color-explorer/src/main.rs
+[2026-04-23T13:27:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.2 files_done=7 resolved=359 errors=1494 current=examples/apps/demo/src/ui.rs
+[2026-04-23T13:31:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.7 files_done=8 resolved=370 errors=1732 current=ratatui-widgets/src/reflow.rs
+[2026-04-23T13:32:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.0 files_done=9 resolved=464 errors=1819 current=xtask/src/main.rs
+[2026-04-23T13:33:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.2 files_done=10 resolved=528 errors=1893 current=ratatui/examples/tracing.rs
+[2026-04-23T13:36:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.8 files_done=12 resolved=580 errors=2063 current=ratatui/tests/widgets_block.rs
+[2026-04-23T13:39:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.8 files_done=13 resolved=580 errors=2264 current=ratatui-widgets/src/block/title.rs
+[2026-04-23T13:39:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.4 files_done=15 resolved=709 errors=2301 current=ratatui-core/src/buffer/cell.rs
+[2026-04-23T13:43:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.1 files_done=17 resolved=781 errors=2552 current=ratatui-core/src/buffer/buffer.rs
+[2026-04-23T13:47:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.9 files_done=18 resolved=921 errors=2808 current=ratatui/tests/widgets_chart.rs
+[2026-04-23T13:49:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.1 files_done=19 resolved=927 errors=2956 current=examples/apps/demo2/src/tabs/weather.rs
+[2026-04-23T13:51:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.9 files_done=20 resolved=936 errors=3076 current=ratatui/examples/scrollbar-widget.rs
+[2026-04-23T13:52:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.1 files_done=21 resolved=958 errors=3154 current=ratatui/examples/constraints.rs
+[2026-04-23T13:55:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.1 files_done=22 resolved=987 errors=3354 current=ratatui-widgets/src/table.rs
+[2026-04-23T14:04:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.3 files_done=23 resolved=1235 errors=3974 current=ratatui/tests/backend_termion.rs
+[2026-04-23T14:10:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.8 files_done=25 resolved=1384 errors=4349 current=examples/apps/demo2/src/theme.rs
+[2026-04-23T14:11:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.0 files_done=26 resolved=1384 errors=4428 current=ratatui-widgets/src/chart.rs
+[2026-04-23T14:16:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.5 files_done=27 resolved=1453 errors=4737 current=ratatui/examples/table-widget.rs
+[2026-04-23T14:17:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.0 files_done=28 resolved=1491 errors=4831 current=ratatui-core/src/text/span.rs
+[2026-04-23T14:20:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.8 files_done=29 resolved=1574 errors=5024 current=ratatui-widgets/src/table/state.rs
+[2026-04-23T14:21:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.0 files_done=30 resolved=1671 errors=5104 current=ratatui-widgets/examples/scrollbar.rs
+[2026-04-23T14:22:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.6 files_done=31 resolved=1675 errors=5145 current=ratatui-widgets/src/calendar.rs
+[2026-04-23T14:22:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.4 files_done=32 resolved=1718 errors=5197 current=examples/apps/demo/src/app.rs
+[2026-04-23T14:25:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.1 files_done=34 resolved=1823 errors=5383 current=ratatui-core/src/style.rs
+[2026-04-23T14:27:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.6 files_done=35 resolved=1866 errors=5480 current=ratatui/examples/user_input.rs
+[2026-04-23T14:27:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.2 files_done=36 resolved=1908 errors=5521 current=ratatui/examples/list-widget.rs
+[2026-04-23T14:28:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.3 files_done=37 resolved=1933 errors=5595 current=ratatui-widgets/src/list/rendering.rs
+[2026-04-23T14:34:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.5 files_done=38 resolved=2023 errors=5949 current=ratatui-widgets/examples/tabs.rs
+[2026-04-23T14:34:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.0 files_done=39 resolved=2028 errors=5985 current=ratatui-widgets/src/tabs.rs
+[2026-04-23T14:36:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.2 files_done=40 resolved=2065 errors=6133 current=ratatui/tests/widgets_table.rs
+[2026-04-23T14:40:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.1 files_done=41 resolved=2094 errors=6392 current=ratatui-widgets/src/canvas/rectangle.rs
+[2026-04-23T14:41:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=98.1 files_done=42 resolved=2097 errors=6460 current=ratatui-widgets/src/sparkline.rs
+[2026-04-23T14:43:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.7 files_done=43 resolved=2175 errors=6572 current=ratatui-core/src/layout/layout.rs
+[2026-04-23T14:50:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=106.9 files_done=44 resolved=2314 errors=7052 current=ratatui/tests/widgets_calendar.rs
+[2026-04-23T14:50:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=107.5 files_done=45 resolved=2324 errors=7093 current=examples/apps/demo2/src/tabs/recipe.rs
+[2026-04-23T14:51:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=108.4 files_done=46 resolved=2332 errors=7156 current=ratatui-crossterm/src/lib.rs
+[2026-04-23T14:52:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.2 files_done=47 resolved=2398 errors=7210 current=examples/apps/calendar-explorer/src/main.rs
+[2026-04-23T14:55:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=111.6 files_done=48 resolved=2426 errors=7370 current=examples/apps/chart/src/main.rs
+[2026-04-23T14:57:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=113.6 files_done=49 resolved=2452 errors=7510 current=ratatui/tests/terminal.rs
+[2026-04-23T14:59:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=115.6 files_done=50 resolved=2494 errors=7641 current=ratatui/examples/widget_impl.rs
+[2026-04-23T14:59:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=116.1 files_done=51 resolved=2512 errors=7679 current=ratatui/tests/widgets_paragraph.rs
+[2026-04-23T15:01:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=117.7 files_done=52 resolved=2527 errors=7788 current=ratatui-termion/src/lib.rs
+[2026-04-23T15:02:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=118.7 files_done=53 resolved=2696 errors=7851 current=ratatui-core/src/backend/test.rs
+[2026-04-23T15:05:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=121.7 files_done=54 resolved=2772 errors=8056 current=ratatui-core/src/style/anstyle.rs
+[2026-04-23T15:07:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=123.6 files_done=58 resolved=2784 errors=8181 current=ratatui-widgets/src/gauge.rs
+[2026-04-23T15:08:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=124.7 files_done=59 resolved=2804 errors=8257 current=ratatui-termwiz/src/lib.rs
+[2026-04-23T15:09:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=125.8 files_done=60 resolved=2959 errors=8325 current=ratatui-core/src/style/palette/material.rs
+[2026-04-23T15:09:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=126.4 files_done=61 resolved=2959 errors=8370 current=ratatui-core/src/text/text.rs
+[2026-04-23T15:13:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=129.8 files_done=62 resolved=3084 errors=8594 current=ratatui/tests/widgets_gauge.rs
+[2026-04-23T15:15:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=132.5 files_done=63 resolved=3084 errors=8776 current=ratatui-widgets/examples/barchart-grouped.rs
+[2026-04-23T15:16:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=133.1 files_done=64 resolved=3091 errors=8816 current=ratatui/examples/custom_widget.rs
+[2026-04-23T15:17:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=134.1 files_done=65 resolved=3101 errors=8887 current=ratatui/tests/widgets_canvas.rs
+[2026-04-23T15:18:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=134.8 files_done=67 resolved=3107 errors=8933 current=examples/apps/demo/src/crossterm.rs
+[2026-04-23T15:19:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=135.9 files_done=70 resolved=3196 errors=9000 current=examples/apps/canvas/src/main.rs
+[2026-04-23T15:20:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=137.0 files_done=71 resolved=3222 errors=9075 current=ratatui-core/src/backend.rs
+[2026-04-23T15:21:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=138.0 files_done=73 resolved=3249 errors=9147 current=ratatui-core/src/style/palette/tailwind.rs
+[2026-04-23T15:25:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=141.6 files_done=74 resolved=3249 errors=9391 current=ratatui/benches/main/table.rs
+[2026-04-23T15:26:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=143.1 files_done=76 resolved=3268 errors=9485 current=examples/apps/demo/src/main.rs
+[2026-04-23T15:27:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=143.6 files_done=78 resolved=3274 errors=9521 current=ratatui/examples/inline.rs
+[2026-04-23T15:28:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=145.0 files_done=79 resolved=3300 errors=9617 current=ratatui-widgets/src/canvas.rs
+[2026-04-23T15:29:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=145.9 files_done=80 resolved=3350 errors=9680 current=ratatui-widgets/src/mascot.rs
+[2026-04-23T15:29:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=146.5 files_done=81 resolved=3369 errors=9714 current=ratatui/benches/main/list.rs
+[2026-04-23T15:30:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=147.3 files_done=83 resolved=3395 errors=9772 current=ratatui-core/src/style/stylize.rs
+[2026-04-23T15:31:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=148.3 files_done=84 resolved=3501 errors=9841 current=ratatui-widgets/src/scrollbar.rs
+[2026-04-23T15:34:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=151.1 files_done=85 resolved=3595 errors=10026 current=ratatui/benches/main/rect.rs
+[2026-04-23T15:35:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=152.1 files_done=87 resolved=3627 errors=10096 current=ratatui/tests/stylize.rs
+[2026-04-23T15:36:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=152.9 files_done=88 resolved=3629 errors=10148 current=ratatui-widgets/examples/calendar.rs
+[2026-04-23T15:37:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=153.7 files_done=89 resolved=3636 errors=10203 current=examples/apps/async-github/src/main.rs
+[2026-04-23T15:38:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=154.6 files_done=90 resolved=3667 errors=10257 current=ratatui/tests/widgets_tabs.rs
+[2026-04-23T15:39:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=155.5 files_done=92 resolved=3705 errors=10321 current=ratatui-widgets/src/clear.rs
+[2026-04-23T15:40:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=156.5 files_done=96 resolved=3735 errors=10389 current=ratatui-core/src/layout/rect/iter.rs
+[2026-04-23T15:40:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=157.4 files_done=98 resolved=3891 errors=10449 current=ratatui-widgets/examples/block.rs
+[2026-04-23T15:41:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=158.1 files_done=99 resolved=3894 errors=10491 current=ratatui/tests/widgets_barchart.rs
+[2026-04-23T15:42:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=158.9 files_done=100 resolved=3895 errors=10549 current=ratatui-widgets/src/list/item.rs
+[2026-04-23T15:42:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=159.5 files_done=102 resolved=3936 errors=10587 current=ratatui-core/src/layout/rect.rs
+[2026-04-23T15:43:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=160.4 files_done=103 resolved=3980 errors=10651 current=ratatui/src/widgets/widget_ref.rs
+[2026-04-23T15:44:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=161.2 files_done=105 resolved=4009 errors=10700 current=ratatui-core/src/terminal/terminal.rs
+[2026-04-23T15:45:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=162.1 files_done=106 resolved=4083 errors=10760 current=ratatui/examples/layout.rs
+[2026-04-23T15:47:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=163.6 files_done=107 resolved=4093 errors=10865 current=ratatui-core/src/buffer/assert.rs
+[2026-04-23T15:47:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=164.2 files_done=109 resolved=4102 errors=10904 current=examples/apps/mouse-drawing/src/main.rs
+[2026-04-23T15:48:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=165.1 files_done=111 resolved=4132 errors=10959 current=examples/apps/demo2/src/main.rs
+[2026-04-23T15:49:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=165.6 files_done=113 resolved=4142 errors=10994 current=ratatui/benches/main/line.rs
+[2026-04-23T15:49:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=166.1 files_done=115 resolved=4161 errors=11032 current=ratatui/examples/docsrs.rs
+[2026-04-23T15:50:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=167.1 files_done=116 resolved=4172 errors=11096 current=ratatui/examples/hyperlink.rs
+[2026-04-23T15:51:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=167.8 files_done=119 resolved=4187 errors=11145 current=ratatui-core/src/layout/direction.rs
+[2026-04-23T15:52:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=168.8 files_done=122 resolved=4246 errors=11209 current=ratatui-widgets/src/block/padding.rs
+[2026-04-23T15:53:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=169.6 files_done=125 resolved=4272 errors=11267 current=examples/apps/demo2/src/tabs/about.rs
+[2026-04-23T15:54:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=170.7 files_done=127 resolved=4279 errors=11336 current=ratatui-widgets/examples/table.rs
+[2026-04-23T15:54:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=171.5 files_done=128 resolved=4282 errors=11392 current=ratatui-core/src/text/grapheme.rs
+[2026-04-23T15:55:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=172.1 files_done=132 resolved=4312 errors=11434 current=ratatui-widgets/examples/canvas.rs
+[2026-04-23T15:56:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=173.3 files_done=134 resolved=4318 errors=11509 current=examples/apps/demo2/src/destroy.rs
+[2026-04-23T15:57:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=174.0 files_done=135 resolved=4320 errors=11560 current=ratatui-widgets/src/canvas/line.rs
+[2026-04-23T15:58:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=175.0 files_done=138 resolved=4335 errors=11620 current=ratatui/examples/hello_world.rs
+[2026-04-23T15:59:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=175.5 files_done=142 resolved=4375 errors=11656 current=ratatui-widgets/src/table/cell.rs
+[2026-04-23T15:59:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=176.1 files_done=144 resolved=4390 errors=11697 current=ratatui/benches/main/buffer.rs
+[2026-04-23T16:00:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=176.7 files_done=147 resolved=4411 errors=11734 current=ratatui-core/src/symbols/marker.rs
+[2026-04-23T16:00:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=177.5 files_done=153 resolved=4441 errors=11789 current=ratatui/examples/minimal.rs
+[2026-04-23T16:01:26Z] [iter=1] Target type resolved target_type=call_site resolved=4470 errors=11819 secs=10639 mem_mb=895 MB
+[2026-04-23T16:01:26Z] [iter=1] Resolving target type target_type=import_statement count=248
+[2026-04-23T16:01:41Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=178.2 files_done=1 resolved=2 errors=0 current=examples/apps/demo2/src/app.rs
+[2026-04-23T16:02:10Z] [iter=1] Target type resolved target_type=import_statement resolved=244 errors=0 secs=44 mem_mb=895 MB
+[2026-04-23T16:02:10Z] [iter=1] Resolving target type target_type=implements_clause count=68
+[2026-04-23T16:02:12Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=178.7 files_done=0 resolved=0 errors=0 current=ratatui-widgets/src/reflow.rs
+[2026-04-23T16:02:37Z] [iter=1] Target type resolved target_type=implements_clause resolved=55 errors=0 secs=27 mem_mb=895 MB
+[2026-04-23T16:03:21Z] [iter=1] Step 5: Writing final enrichment file triples=120218
+[2026-04-23T16:03:24Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/e7831aedd40d9ce2fa9f37a6f2b8f00c05f2859e.nq.gz size_kb=2616
+[2026-04-23T16:03:24Z] [iter=1] PHASE END: enrich elapsed_s=10794 elapsed_min=179.9 total_triples=120218
